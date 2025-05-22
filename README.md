@@ -24,7 +24,11 @@ Liste des ressources publiées sur Github par Alsacréations
 
 ### Spätzi
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*` ✅
+- Ajouté à Github Pages + URL `alsacreations.github.io/spatzi` ✅
+
+### Palette
+
+- Ajouté à Github Pages + URL `alsacreations.github.io/palette` ✅
 
 ### MyDevice
 
@@ -40,14 +44,10 @@ Liste des ressources publiées sur Github par Alsacréations
 
 - Ajouté à Github Pages + URL `alsacreations.github.io/liquid` ✅
 
-### Reset
-
-- Ajouté à Github Pages + URL `alsacreations.github.io/reset`
-
 ### Bretzel
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*`
-- Nom de domaine `bretzel.alsacreations.com` redirigé à partir de toutes les sources
+- Ajouté à Github Pages + URL `alsacreations.github.io/bretzel` ✅
+- Nom de domaine `bretzel.alsacreations.com` redirigé à partir de toutes les sources ❌
 
 ### gpt
 
@@ -69,9 +69,5 @@ Liste des ressources publiées sur Github par Alsacréations
 - Nom de domaine `whattheconf.pwnd.fr` redirigé à partir de toutes les sources
 
 ### kiwi.gg
-
-???
-
-### Snippets
 
 ???
