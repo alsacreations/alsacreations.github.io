@@ -28,17 +28,21 @@ Liste des ressources publiées sur Github par Alsacréations
 
 ### MyDevice
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*` ✅
+- Ajouté à Github Pages + URL `alsacreations.github.io/mydevice` ✅
 - Nom de domaine `mydevice.io` redirigé à partir de toutes les sources ❌
 
 ### Schnaps.it
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*` ✅
+- Ajouté à Github Pages + URL `alsacreations.github.io/schnapsit` ✅
 - Nom de domaine `schnaps.it` redirigé à partir de toutes les sources ❌
 
 ### Liquid
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*`
+- Ajouté à Github Pages + URL `alsacreations.github.io/liquid` ✅
+
+### Reset
+
+- Ajouté à Github Pages + URL `alsacreations.github.io/reset`
 
 ### Bretzel
 
