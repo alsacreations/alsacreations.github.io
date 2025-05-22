@@ -33,13 +33,12 @@ Liste des ressources publiées sur Github par Alsacréations
 
 ### Schnaps.it
 
-- Ajouté à Github Pages + URL `alsacreations.github.io/*`
-- Nom de domaine `schnaps.it` redirigé à partir de toutes les sources
+- Ajouté à Github Pages + URL `alsacreations.github.io/*` ✅
+- Nom de domaine `schnaps.it` redirigé à partir de toutes les sources ❌
 
 ### Liquid
 
 - Ajouté à Github Pages + URL `alsacreations.github.io/*`
-- Nom de domaine `liquid.alsacreations.com` redirigé à partir de toutes les sources
 
 ### Bretzel
 
@@ -56,14 +55,6 @@ Liste des ressources publiées sur Github par Alsacréations
 - Ajouté à Github Pages + URL `alsacreations.github.io/*`
 - Nom de domaine `knacss.com` redirigé à partir de toutes les sources
 
-### kiwi.gg
-
-???
-
-### Snippets
-
-???
-
 ### Pepin
 
 - Ajouté à Github Pages + URL `alsacreations.github.io/*`
@@ -72,3 +63,11 @@ Liste des ressources publiées sur Github par Alsacréations
 
 - Ajouté à Github Pages + URL `alsacreations.github.io/*`
 - Nom de domaine `whattheconf.pwnd.fr` redirigé à partir de toutes les sources
+
+### kiwi.gg
+
+???
+
+### Snippets
+
+???
