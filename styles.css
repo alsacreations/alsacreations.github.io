@@ -111,7 +111,8 @@ h3 {
   border-right: 0;
 }
 
-.repo a {
+.repo a,
+.repo h3 {
   color: #789500;
   text-decoration: none;
 }
@@ -130,7 +131,8 @@ h3 {
   background: transparent;
 }
 
-.repo--html a {
+.repo--html a,
+.repo--html h3 {
   color: #f16529;
 }
 
@@ -143,7 +145,8 @@ h3 {
   background: transparent;
 }
 
-.repo--css a {
+.repo--css a,
+.repo--css h3 {
   color: #29a9df;
 }
 
@@ -156,7 +159,8 @@ h3 {
   background: transparent;
 }
 
-.repo--javascript a {
+.repo--javascript a,
+.repo--javascript h3 {
   color: #c99c00;
 }
 
@@ -169,7 +173,8 @@ h3 {
   background: transparent;
 }
 
-.repo--php a {
+.repo--php a,
+.repo--php h3 {
   color: #617cbe;
 }
 
@@ -182,7 +187,8 @@ h3 {
   background: transparent;
 }
 
-.repo--liquid a {
+.repo--liquid a,
+.repo--liquid h3 {
   color: #95be46;
 }
 
