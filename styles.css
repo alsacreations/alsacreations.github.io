@@ -1,207 +1,210 @@
 body {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.6;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #3A3A3A;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #3a3a3a;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 3rem;
-    font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 h3 {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-    display: inline;
-    font-weight: 700;
-    vertical-align: middle;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  display: inline;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .header {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 32vh;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 32vh;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .button {
-    display: inline-block;
-    border: 1px solid;
-    padding: 3px 10px 4px;
-    border-radius: 3px;
-    margin: 6px 12px 0 0;
-    transition: .2s;
+  display: inline-block;
+  border: 1px solid;
+  padding: 3px 10px 4px;
+  border-radius: 3px;
+  margin: 6px 12px 0 0;
+  transition: 0.2s;
 }
 
 .button:hover {
-    background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-    position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
 }
 
 .icon--sub {
-    fill: #333;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    vertical-align: sub;
+  fill: #333;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  vertical-align: sub;
 }
 
 .portfolio {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .repo {
-    position: relative;
-    display: block;
-    width: 32.33%;
-    margin: .5%;
-    padding: 30px 30px;
-    background: rgba(171, 199, 55, 0.1);
-    transition: .2s;
-    margin-bottom: 1em;
+  position: relative;
+  display: block;
+  width: 32.33%;
+  margin: 0.5%;
+  padding: 30px 30px;
+  background: rgba(171, 199, 55, 0.1);
+  transition: 0.2s;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 960px) {
-    .repo {
-        width: 49%;
-    }
+  .repo {
+    width: 49%;
+  }
 }
 
 @media (max-width: 600px) {
-    .repo {
-        width: 100%;
-        margin: 0 0 20px;
-    }
+  .repo {
+    width: 100%;
+    margin: 0 0 20px;
+  }
 }
 
 .repo:nth-of-type(3n) {
-    border-right: 0;
+  border-right: 0;
 }
 
 .repo a {
-    color: #abc737;
-    text-decoration: none;
+  color: #789500;
+  text-decoration: none;
 }
 
 .repo .icon {
-    fill: #abc737;
-    background: transparent;
+  fill: #789500;
+  background: transparent;
 }
 
 .repo--html {
-    background: rgba(241, 101, 41, 0.1);
+  background: rgba(241, 101, 41, 0.1);
 }
 
 .repo--html .icon {
-    fill: #F16529;
-    background: transparent;
+  fill: #f16529;
+  background: transparent;
 }
 
 .repo--html a {
-    color: #F16529;
+  color: #f16529;
 }
 
 .repo--css {
-    background: rgba(41, 169, 223, 0.1);
+  background: rgba(41, 169, 223, 0.1);
 }
 
 .repo--css .icon {
-    fill: #29A9DF;
-    background: transparent;
+  fill: #29a9df;
+  background: transparent;
 }
 
 .repo--css a {
-    color: #29A9DF;
+  color: #29a9df;
 }
 
 .repo--javascript {
-    background: rgba(232, 201, 23, 0.1);
+  background: rgba(232, 201, 23, 0.1);
 }
 
 .repo--javascript .icon {
-    fill: #C99C00;
-    background: transparent;
+  fill: #c99c00;
+  background: transparent;
 }
 
 .repo--javascript a {
-    color: #C99C00;
+  color: #c99c00;
 }
 
 .repo--php {
-    background: rgba(97, 124, 190, 0.1);
+  background: rgba(97, 124, 190, 0.1);
 }
 
 .repo--php .icon {
-    fill: #617CBE;
-    background: transparent;
+  fill: #617cbe;
+  background: transparent;
 }
 
 .repo--php a {
-    color: #617CBE;
+  color: #617cbe;
 }
 
 .repo--liquid {
-    background: rgba(149, 190, 70, 0.1);
+  background: rgba(149, 190, 70, 0.1);
 }
 
 .repo--liquid .icon {
-    fill: #95BE46;
-    background: transparent;
+  fill: #95be46;
+  background: transparent;
 }
 
 .repo--liquid a {
-    color: #95BE46;
+  color: #95be46;
 }
 
 .details {
-    position: absolute;
-    font-size: .8rem;
-    top: 15px;
-    right: 20px;
-    opacity: 0.75;
+  position: absolute;
+  font-size: 0.8rem;
+  top: 15px;
+  right: 20px;
+  opacity: 0.75;
 }
 
 .details span {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .copy {
-    text-align: center;
-    color: #888;
-    margin: 4em 0 3em 0;
+  text-align: center;
+  color: #888;
+  margin: 4em 0 3em 0;
 }
 
 .copy a {
-    color: #666;
+  color: #666;
 }
