@@ -1,11 +1,85 @@
+:root {
+  /* Couleurs */
+  --color-white: #ffffff;
+  --color-black: #111111;
+  --color-gray-light: #eeeeee;
+  --color-gray-medium: #aaaaaa;
+  --color-gray-dark: #999999;
+  --color-gray-darker: #333333;
+  --color-hotpink: #ff69b4;
+
+  --color-green-base: #789500;
+  --color-green-bg-transparent: rgba(171, 199, 55, 0.1);
+  --color-green-shadow: #789500; /* Pour box-shadow */
+
+  --color-html-base: #f16529;
+  --color-html-bg-transparent: rgba(241, 101, 41, 0.1);
+  --color-html-shadow: #f16529; /* Pour box-shadow */
+
+  --color-css-base: #29a9df;
+  --color-css-bg-transparent: rgba(41, 169, 223, 0.1);
+  --color-css-shadow: #29a9df; /* Pour box-shadow */
+
+  --color-javascript-base: #c99c00;
+  --color-javascript-bg-transparent: rgba(232, 201, 23, 0.1);
+  --color-javascript-shadow: #c99c00; /* Pour box-shadow */
+
+  --color-php-base: #617cbe;
+  --color-php-bg-transparent: rgba(97, 124, 190, 0.1);
+  --color-php-shadow: #617cbe; /* Pour box-shadow */
+
+  --color-liquid-base: #95be46; /* Couleur de base pour Liquid */
+  --color-liquid-text: #29a9df; /* Couleur spécifique pour le texte/icône si différente */
+  --color-liquid-bg-transparent: rgba(149, 190, 70, 0.1);
+  --color-liquid-shadow: #95be46; /* Pour box-shadow */
+
+  /* Espacements */
+  --spacing-0: 0rem;
+  --spacing-3: 0.1875rem; /* 3px / 16px */
+  --spacing-4: 0.25rem; /* 4px / 16px */
+  --spacing-6: 0.375rem; /* 6px / 16px */
+  --spacing-10: 0.625rem; /* 10px / 16px */
+  --spacing-12: 0.75rem; /* 12px / 16px */
+  --spacing-15: 0.9375rem; /* 15px / 16px */
+  --spacing-16: 1rem; /* 16px / 16px */
+  --spacing-20: 1.25rem; /* 20px / 16px */
+  --spacing-30: 1.875rem; /* 30px / 16px */
+  --spacing-48: 3rem; /* 48px / 16px (pour 3em) */
+  --spacing-64: 4rem; /* 64px / 16px (pour 4em) */
+
+  /* Tailles de police */
+  --text-base: 1rem;
+  --text-s: 0.8rem;
+  --text-m: 1.1rem;
+  --text-l: 1.4rem;
+  --text-xl: 3rem;
+
+  /* Graisses de police */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Hauteurs de ligne */
+  --leading-normal: 1.5;
+  --leading-tight: 1; /* Correspond à font-size * 1 */
+  --leading-snug: 2; /* Correspond à font-size * 2 */
+
+  /* Rayons de bordure */
+  --radius-s: 3px;
+  --radius-m: 1rem;
+
+  /* Transitions */
+  --transition-duration-fast: 0.2s;
+}
+
 body {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  margin: var(--spacing-0);
+  min-height: 100dvh; /* Ajout du min-height */
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
   font-family: system-ui, sans-serif;
-  font-weight: 400;
-  color: #fff;
-  background: #111;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+  background: var(--color-black);
 }
 
 * {
@@ -13,56 +87,62 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  font-weight: 700;
+  font-size: var(--text-xl);
+  line-height: var(
+    --leading-tight
+  ); /* Ajusté pour correspondre à 3rem / 3rem */
+  font-weight: var(--font-weight-bold);
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
 
 h2 {
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  font-weight: 400;
+  font-size: var(--text-l);
+  line-height: var(
+    --leading-snug
+  ); /* Ajusté pour correspondre à 2.8rem / 1.4rem */
+  font-weight: var(--font-weight-regular);
   text-align: center;
-  color: #eee;
+  color: var(--color-gray-light);
 }
 
 h3 {
-  font-size: 1.1rem;
-  line-height: 2.2rem;
-  font-weight: 700;
+  font-size: var(--text-m);
+  line-height: var(
+    --leading-snug
+  ); /* Ajusté pour correspondre à 2.2rem / 1.1rem */
+  font-weight: var(--font-weight-bold);
   vertical-align: middle;
   text-align: center;
-  margin-top: 0;
+  margin-top: var(--spacing-0);
   display: flex;
   justify-content: start;
   align-items: center;
 
   & span {
-    /* tag "archive" */
+    /* Étiquette "archive" */
     margin-left: auto;
-    color: #999;
+    color: var(--color-gray-dark);
   }
 
   & .icon {
-    margin-right: 1rem;
+    margin-right: var(--spacing-16); /* 1rem */
   }
 }
 
 a {
-  color: hotpink;
+  color: var(--color-hotpink);
 
   &:visited {
-    color: hotpink;
+    color: var(--color-hotpink);
   }
 }
 
 .header {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: var(--spacing-0) auto;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -71,179 +151,184 @@ a {
 
 .button {
   display: inline-block;
-  border: 1px solid;
-  padding: 3px 10px 4px;
-  border-radius: 3px;
-  margin: 6px 12px 0 0;
-  transition: 0.2s;
+  border: 1px solid; /* La couleur du border héritera de la couleur du texte */
+  padding: var(--spacing-3) var(--spacing-10) var(--spacing-4); /* 3px 10px 4px */
+  border-radius: var(--radius-s); /* 3px */
+  margin: var(--spacing-6) var(--spacing-12) var(--spacing-0) var(--spacing-0); /* 6px 12px 0 0 */
+  transition: var(--transition-duration-fast) background-color,
+    var(--transition-duration-fast) color;
 }
 
 .button:hover {
-  background: #fff;
-  color: #333;
+  background: var(--color-white);
+  color: var(--color-gray-darker);
 }
 
 .icon {
   width: 24px;
   height: 24px;
-  margin-right: 10px;
+  margin-right: var(--spacing-10); /* 10px */
   vertical-align: middle;
   position: relative;
 }
 
 h1 .icon {
-  width: 3rem;
-  height: 3rem;
+  width: 3rem; /* Conserve rem car lié à la taille de la police de h1 */
+  height: 3rem; /* Conserve rem car lié à la taille de la police de h1 */
 }
 
 .icon--sub {
-  fill: #333;
+  fill: var(--color-gray-darker);
   width: 16px;
   height: 16px;
-  margin: 0;
+  margin: var(--spacing-0);
   vertical-align: sub;
 }
 
 .portfolio {
   list-style: none;
-  padding: 0;
-  margin: 0 auto;
+  padding: var(--spacing-0);
+  margin: var(--spacing-0) auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  gap: var(--spacing-20); /* 20px */
   max-width: 1200px;
 }
 
 .repo {
   position: relative;
   display: block;
-  padding: 30px;
-  background: rgba(171, 199, 55, 0.1);
-  transition: 0.2s;
-  border-radius: 1rem;
+  padding: var(--spacing-30); /* 30px */
+  background: var(--color-green-bg-transparent);
+  transition: var(--transition-duration-fast) box-shadow;
+  border-radius: var(--radius-m); /* 1rem */
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #789500;
+    box-shadow: inset 0px 0px 10px var(--color-green-shadow);
   }
 }
 
 .repo a,
 .repo h3 {
-  color: #789500;
+  color: var(--color-green-base);
   text-decoration: none;
 }
 
 .repo .icon {
-  fill: #789500;
+  fill: var(--color-green-base);
   background: transparent;
 }
 
 .repo--html {
-  background: rgba(241, 101, 41, 0.1);
+  background: var(--color-html-bg-transparent);
 
   .icon {
-    fill: #f16529;
+    fill: var(--color-html-base);
     background: transparent;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #f16529;
+    box-shadow: inset 0px 0px 10px var(--color-html-shadow);
   }
 }
 
 .repo--html a,
 .repo--html h3 {
-  color: #f16529;
+  color: var(--color-html-base);
 }
 
 .repo--css {
-  background: rgba(41, 169, 223, 0.1);
+  background: var(--color-css-bg-transparent);
 
   .icon {
-    fill: #29a9df;
+    fill: var(--color-css-base);
     background: transparent;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #29a9df;
+    box-shadow: inset 0px 0px 10px var(--color-css-shadow);
   }
 }
 
 .repo--css a,
 .repo--css h3 {
-  color: #29a9df;
+  color: var(--color-css-base);
 }
 
 .repo--javascript {
-  background: rgba(232, 201, 23, 0.1);
+  background: var(--color-javascript-bg-transparent);
 
   .icon {
-    fill: #c99c00;
+    fill: var(--color-javascript-base);
     background: transparent;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #c99c00;
+    box-shadow: inset 0px 0px 10px var(--color-javascript-shadow);
   }
 }
 
 .repo--javascript a,
 .repo--javascript h3 {
-  color: #c99c00;
+  color: var(--color-javascript-base);
 }
 
 .repo--php {
-  background: rgba(97, 124, 190, 0.1);
+  background: var(--color-php-bg-transparent);
 
   .icon {
-    fill: #617cbe;
+    fill: var(--color-php-base);
     background: transparent;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #617cbe;
+    box-shadow: inset 0px 0px 10px var(--color-php-shadow);
   }
 }
 
 .repo--php a,
 .repo--php h3 {
-  color: #617cbe;
+  color: var(--color-php-base);
 }
 
 .repo--liquid {
-  background: rgba(149, 190, 70, 0.1);
+  background: var(--color-liquid-bg-transparent);
 
   .icon {
-    fill: #29a9df;
+    fill: var(
+      --color-liquid-text
+    ); /* Utilisation de la variable pour le texte/icône Liquid */
     background: transparent;
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px #95be46;
+    box-shadow: inset 0px 0px 10px var(--color-liquid-shadow);
   }
 }
 
 .repo--liquid a,
 .repo--liquid h3 {
-  color: #29a9df;
+  color: var(
+    --color-liquid-text
+  ); /* Utilisation de la variable pour le texte/icône Liquid */
 }
 
 .details {
   position: absolute;
-  font-size: 0.8rem;
-  top: 15px;
-  right: 20px;
+  font-size: var(--text-s);
+  top: var(--spacing-15); /* 15px */
+  right: var(--spacing-20); /* 20px */
   opacity: 0.75;
 }
 
 .details span {
-  margin-left: 16px;
+  margin-left: var(--spacing-16); /* 1rem */
 }
 
 .copy {
   text-align: center;
-  color: #aaa;
-  margin: 4em 0 3em 0;
+  color: var(--color-gray-medium);
+  margin: var(--spacing-64) var(--spacing-0) var(--spacing-48) var(--spacing-0); /* 4em 0 3em 0 */
   a {
     color: inherit;
   }
