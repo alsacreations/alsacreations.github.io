@@ -108,43 +108,23 @@ h1 .icon {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
   max-width: 1200px;
 }
 
 .repo {
   position: relative;
   display: block;
-  width: 32.33%;
-  margin: 0.5%;
-  padding: 30px 30px;
+  padding: 30px;
   background: rgba(171, 199, 55, 0.1);
   transition: 0.2s;
-  margin-bottom: 1em;
   border-radius: 1rem;
 
   &:hover {
     box-shadow: inset 0px 0px 10px #789500;
   }
-}
-
-@media (max-width: 960px) {
-  .repo {
-    width: 49%;
-  }
-}
-
-@media (max-width: 600px) {
-  .repo {
-    width: 100%;
-    margin: 0 0 20px;
-  }
-}
-
-.repo:nth-of-type(3n) {
-  border-right: 0;
 }
 
 .repo a,
@@ -187,7 +167,6 @@ h1 .icon {
   &:hover {
     box-shadow: inset 0px 0px 10px #29a9df;
   }
-
 }
 
 .repo--css a,
