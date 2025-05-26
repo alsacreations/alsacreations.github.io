@@ -68,7 +68,7 @@
   --radius-m: 1rem;
 
   /* Transitions */
-  --transition-duration-fast: 0.2s;
+  --transition-duration-fast: 0.25s;
 }
 
 body {
