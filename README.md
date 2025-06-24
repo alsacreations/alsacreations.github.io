@@ -43,7 +43,9 @@ Liste des ressources publiées sur Github par Alsacréations
 - URL `gpt.alsacreations.com`
 - Nom de domaine actuel `gpt.schnaps.it`
 
-### Knacss
+### KNACSS
+
+> Styles CSS sur-vitaminés pour éléments HTML natifs
 
 - Github Pages `alsacreations.github.io/KNACSS`
 - Nom de domaine actuel `knacss.com`
