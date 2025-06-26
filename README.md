@@ -4,6 +4,13 @@ Liste des ressources publiées sur Github par Alsacréations
 
 ## Projets publics
 
+### Reset
+
+> Générateur de palettes de couleurs accessibles
+
+- Github Pages `alsacreations.github.io/reset`
+- URL `reset.alsacreations.com`
+
 ### Spätzi
 
 > Testez et corrigez vos contrastes de couleurs non accessibles
