@@ -48,6 +48,13 @@ Liste des ressources publiées sur Github par Alsacréations
 - Github Pages `alsacreations.github.io/liquid`
 - URL `liquid.alsacreations.com`
 
+### Quetsche
+
+> Compression d'images. Simple. Basique
+
+- URL `quetsche.alsacreations.com`
+- Repo `github.com/alsacreations/quetsche`
+
 ### Bretzel
 
 > Annuaire de Layouts CSS utilitaires
