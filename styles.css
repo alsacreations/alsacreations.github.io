@@ -8,30 +8,70 @@
   --color-gray-darker: #333333;
   --color-hotpink: #ff69b4;
 
-  --color-green-base: #789500;
-  --color-green-bg-transparent: rgba(171, 199, 55, 0.1);
-  --color-green-shadow: #789500; /* Pour box-shadow */
+  --color-green-base: #bade2c;
+  --color-green-bg-transparent: rgba(171, 199, 55, 0.2);
+  --color-green-shadow: var(--color-green-base); /* Pour box-shadow */
 
-  --color-html-base: #f16529;
-  --color-html-bg-transparent: rgba(241, 101, 41, 0.1);
-  --color-html-shadow: #f16529; /* Pour box-shadow */
+  --color-html-base: #f78b5d;
+  --color-html-bg-transparent: rgba(241, 101, 41, 0.2);
+  --color-html-shadow: var(--color-html-base); /* Pour box-shadow */
 
-  --color-css-base: #29a9df;
-  --color-css-bg-transparent: rgba(41, 169, 223, 0.1);
-  --color-css-shadow: #29a9df; /* Pour box-shadow */
+  --color-css-base: #3db8ed;
+  --color-css-bg-transparent: rgba(41, 169, 223, 0.2);
+  --color-css-shadow: var(--color-css-base); /* Pour box-shadow */
 
-  --color-javascript-base: #c99c00;
-  --color-javascript-bg-transparent: rgba(232, 201, 23, 0.1);
-  --color-javascript-shadow: #c99c00; /* Pour box-shadow */
+  --color-javascript-base: #f5cc36;
+  --color-javascript-bg-transparent: rgba(232, 201, 23, 0.2);
+  --color-javascript-shadow: var(--color-javascript-base); /* Pour box-shadow */
 
-  --color-php-base: #617cbe;
-  --color-php-bg-transparent: rgba(97, 124, 190, 0.1);
-  --color-php-shadow: #617cbe; /* Pour box-shadow */
+  --color-php-base: #7497ee;
+  --color-php-bg-transparent: rgba(97, 124, 190, 0.2);
+  --color-php-shadow: var(--color-php-base); /* Pour box-shadow */
 
-  --color-liquid-base: #95be46; /* Couleur de base pour Liquid */
+  --color-liquid-base: #b5e957; /* Couleur de base pour Liquid */
   --color-liquid-text: #29a9df; /* Couleur spécifique pour le texte/icône si différente */
-  --color-liquid-bg-transparent: rgba(149, 190, 70, 0.1);
-  --color-liquid-shadow: #95be46; /* Pour box-shadow */
+  --color-liquid-bg-transparent: rgba(149, 190, 70, 0.2);
+  --color-liquid-shadow: var(--color-liquid-base); /* Pour box-shadow */
+
+  --color-book-base: #c966f4; /* Violet pour documentation */
+  --color-book-bg-transparent: rgba(142, 68, 173, 0.2);
+  --color-book-shadow: var(--color-book-base);
+
+  --color-grid-base: #f8a154; /* Orange pour layouts */
+  --color-grid-bg-transparent: rgba(230, 126, 34, 0.2);
+  --color-grid-shadow: var(--color-grid-base);
+
+  --color-device-base: #4aa8e7; /* Bleu pour device */
+  --color-device-bg-transparent: rgba(52, 152, 219, 0.2);
+  --color-device-shadow: var(--color-device-base);
+
+  --color-type-base: #2eccad; /* Turquoise pour typographie */
+  --color-type-bg-transparent: rgba(22, 160, 133, 0.2);
+  --color-type-shadow: var(--color-type-base);
+
+  --color-eye-base: #31e67c; /* Vert pour accessibilité */
+  --color-eye-bg-transparent: rgba(39, 174, 96, 0.2);
+  --color-eye-shadow: var(--color-eye-base);
+
+  --color-text-base: #eb6354; /* Rouge pour texte */
+  --color-text-bg-transparent: rgba(192, 57, 43, 0.2);
+  --color-text-shadow: var(--color-text-base);
+
+  --color-refresh-base: #8aa5c0; /* Gris pour reset */
+  --color-refresh-bg-transparent: rgba(149, 165, 166, 0.2);
+  --color-refresh-shadow: var(--color-refresh-base);
+
+  --color-image-base: #f78376; /* Rouge-rose pour images */
+  --color-image-bg-transparent: rgba(231, 76, 60, 0.2);
+  --color-image-shadow: var(--color-image-base);
+
+  --color-palette-base: #c96fed; /* Violet clair pour palette */
+  --color-palette-bg-transparent: rgba(155, 89, 182, 0.2);
+  --color-palette-shadow: var(--color-palette-base);
+
+  --color-check-base: #47e9c9; /* Turquoise clair pour quiz */
+  --color-check-bg-transparent: rgba(26, 188, 156, 0.2);
+  --color-check-shadow: var(--color-check-base);
 
   /* Espacements */
   --spacing-0: 0rem;
@@ -204,7 +244,7 @@ h1 .icon {
   border-radius: var(--radius-m); /* 1rem */
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-green-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-green-shadow);
   }
 }
 
@@ -228,7 +268,7 @@ h1 .icon {
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-html-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-html-shadow);
   }
 }
 
@@ -246,7 +286,7 @@ h1 .icon {
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-css-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-css-shadow);
   }
 }
 
@@ -264,7 +304,7 @@ h1 .icon {
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-javascript-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-javascript-shadow);
   }
 }
 
@@ -282,7 +322,7 @@ h1 .icon {
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-php-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-php-shadow);
   }
 }
 
@@ -302,7 +342,7 @@ h1 .icon {
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 10px var(--color-liquid-shadow);
+    box-shadow: inset 0px 0px 0px 2px var(--color-liquid-shadow);
   }
 }
 
@@ -323,6 +363,186 @@ h1 .icon {
 
 .details span {
   margin-left: var(--spacing-16); /* 1rem */
+}
+
+.repo--book {
+  background: var(--color-book-bg-transparent);
+
+  .icon {
+    fill: var(--color-book-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-book-shadow);
+  }
+}
+
+.repo--book a,
+.repo--book h3 {
+  color: var(--color-book-base);
+}
+
+.repo--grid {
+  background: var(--color-grid-bg-transparent);
+
+  .icon {
+    fill: var(--color-grid-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-grid-shadow);
+  }
+}
+
+.repo--grid a,
+.repo--grid h3 {
+  color: var(--color-grid-base);
+}
+
+.repo--device {
+  background: var(--color-device-bg-transparent);
+
+  .icon {
+    fill: var(--color-device-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-device-shadow);
+  }
+}
+
+.repo--device a,
+.repo--device h3 {
+  color: var(--color-device-base);
+}
+
+.repo--type {
+  background: var(--color-type-bg-transparent);
+
+  .icon {
+    fill: var(--color-type-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-type-shadow);
+  }
+}
+
+.repo--type a,
+.repo--type h3 {
+  color: var(--color-type-base);
+}
+
+.repo--eye {
+  background: var(--color-eye-bg-transparent);
+
+  .icon {
+    fill: var(--color-eye-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-eye-shadow);
+  }
+}
+
+.repo--eye a,
+.repo--eye h3 {
+  color: var(--color-eye-base);
+}
+
+.repo--text {
+  background: var(--color-text-bg-transparent);
+
+  .icon {
+    fill: var(--color-text-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-text-shadow);
+  }
+}
+
+.repo--text a,
+.repo--text h3 {
+  color: var(--color-text-base);
+}
+
+.repo--refresh {
+  background: var(--color-refresh-bg-transparent);
+
+  .icon {
+    fill: var(--color-refresh-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-refresh-shadow);
+  }
+}
+
+.repo--refresh a,
+.repo--refresh h3 {
+  color: var(--color-refresh-base);
+}
+
+.repo--image {
+  background: var(--color-image-bg-transparent);
+
+  .icon {
+    fill: var(--color-image-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-image-shadow);
+  }
+}
+
+.repo--image a,
+.repo--image h3 {
+  color: var(--color-image-base);
+}
+
+.repo--palette {
+  background: var(--color-palette-bg-transparent);
+
+  .icon {
+    fill: var(--color-palette-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-palette-shadow);
+  }
+}
+
+.repo--palette a,
+.repo--palette h3 {
+  color: var(--color-palette-base);
+}
+
+.repo--check {
+  background: var(--color-check-bg-transparent);
+
+  .icon {
+    fill: var(--color-check-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-check-shadow);
+  }
+}
+
+.repo--check a,
+.repo--check h3 {
+  color: var(--color-check-base);
 }
 
 .copy {
