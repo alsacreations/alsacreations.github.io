@@ -74,8 +74,8 @@
   --color-check-shadow: var(--color-check-base);
 
   --color-game-base: #f39c12; /* Orange vif pour jeu */
-  --color-game-bg-transparent: rgba(243, 156, 18, 0.1);
-  --color-game-shadow: #f39c12;
+  --color-game-bg-transparent: rgba(243, 156, 18, 0.2);
+  --color-game-shadow: var(--color-game-base);
 
   /* Espacements */
   --spacing-0: 0rem;
@@ -239,332 +239,143 @@ h1 .icon {
   max-width: 1200px;
 }
 
+/* Styles de base pour toutes les cartes */
 .repo {
   position: relative;
   display: block;
-  padding: var(--spacing-30); /* 30px */
-  background: var(--color-green-bg-transparent);
+  padding: var(--spacing-30);
+  background: var(--repo-bg, var(--color-green-bg-transparent));
   transition: var(--transition-duration-fast) box-shadow;
-  border-radius: var(--radius-m); /* 1rem */
+  border-radius: var(--radius-m);
 
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-green-shadow);
+  /* Styles communs pour les liens et titres */
+  a,
+  h3 {
+    color: var(--repo-color, var(--color-green-base));
+    text-decoration: none;
   }
-}
 
-.repo a,
-.repo h3 {
-  color: var(--color-green-base);
-  text-decoration: none;
-}
-
-.repo .icon {
-  fill: var(--color-green-base);
-  background: transparent;
-}
-
-.repo--html {
-  background: var(--color-html-bg-transparent);
-
+  /* Styles communs pour les icônes */
   .icon {
-    fill: var(--color-html-base);
+    fill: var(--repo-icon, var(--repo-color, var(--color-green-base)));
     background: transparent;
   }
 
+  /* Effet hover commun */
   &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-html-shadow);
+    box-shadow: inset 0px 0px 0px 2px
+      var(--repo-shadow, var(--color-green-shadow));
   }
 }
 
-.repo--html a,
-.repo--html h3 {
-  color: var(--color-html-base);
+/* Définition des couleurs pour chaque variante via custom properties */
+.repo--html {
+  --repo-bg: var(--color-html-bg-transparent);
+  --repo-color: var(--color-html-base);
+  --repo-shadow: var(--color-html-shadow);
 }
 
 .repo--css {
-  background: var(--color-css-bg-transparent);
-
-  .icon {
-    fill: var(--color-css-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-css-shadow);
-  }
-}
-
-.repo--css a,
-.repo--css h3 {
-  color: var(--color-css-base);
+  --repo-bg: var(--color-css-bg-transparent);
+  --repo-color: var(--color-css-base);
+  --repo-shadow: var(--color-css-shadow);
 }
 
 .repo--javascript {
-  background: var(--color-javascript-bg-transparent);
-
-  .icon {
-    fill: var(--color-javascript-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-javascript-shadow);
-  }
-}
-
-.repo--javascript a,
-.repo--javascript h3 {
-  color: var(--color-javascript-base);
+  --repo-bg: var(--color-javascript-bg-transparent);
+  --repo-color: var(--color-javascript-base);
+  --repo-shadow: var(--color-javascript-shadow);
 }
 
 .repo--php {
-  background: var(--color-php-bg-transparent);
-
-  .icon {
-    fill: var(--color-php-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-php-shadow);
-  }
-}
-
-.repo--php a,
-.repo--php h3 {
-  color: var(--color-php-base);
+  --repo-bg: var(--color-php-bg-transparent);
+  --repo-color: var(--color-php-base);
+  --repo-shadow: var(--color-php-shadow);
 }
 
 .repo--liquid {
-  background: var(--color-liquid-bg-transparent);
-
-  .icon {
-    fill: var(
-      --color-liquid-text
-    ); /* Utilisation de la variable pour le texte/icône Liquid */
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-liquid-shadow);
-  }
-}
-
-.repo--liquid a,
-.repo--liquid h3 {
-  color: var(
-    --color-liquid-text
-  ); /* Utilisation de la variable pour le texte/icône Liquid */
-}
-
-.details {
-  position: absolute;
-  font-size: var(--text-s);
-  top: var(--spacing-15); /* 15px */
-  right: var(--spacing-20); /* 20px */
-  opacity: 0.75;
-}
-
-.details span {
-  margin-left: var(--spacing-16); /* 1rem */
+  --repo-bg: var(--color-liquid-bg-transparent);
+  --repo-color: var(--color-liquid-text);
+  --repo-shadow: var(--color-liquid-shadow);
 }
 
 .repo--book {
-  background: var(--color-book-bg-transparent);
-
-  .icon {
-    fill: var(--color-book-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-book-shadow);
-  }
-}
-
-.repo--book a,
-.repo--book h3 {
-  color: var(--color-book-base);
+  --repo-bg: var(--color-book-bg-transparent);
+  --repo-color: var(--color-book-base);
+  --repo-shadow: var(--color-book-shadow);
 }
 
 .repo--grid {
-  background: var(--color-grid-bg-transparent);
-
-  .icon {
-    fill: var(--color-grid-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-grid-shadow);
-  }
-}
-
-.repo--grid a,
-.repo--grid h3 {
-  color: var(--color-grid-base);
+  --repo-bg: var(--color-grid-bg-transparent);
+  --repo-color: var(--color-grid-base);
+  --repo-shadow: var(--color-grid-shadow);
 }
 
 .repo--device {
-  background: var(--color-device-bg-transparent);
-
-  .icon {
-    fill: var(--color-device-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-device-shadow);
-  }
-}
-
-.repo--device a,
-.repo--device h3 {
-  color: var(--color-device-base);
+  --repo-bg: var(--color-device-bg-transparent);
+  --repo-color: var(--color-device-base);
+  --repo-shadow: var(--color-device-shadow);
 }
 
 .repo--type {
-  background: var(--color-type-bg-transparent);
-
-  .icon {
-    fill: var(--color-type-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-type-shadow);
-  }
-}
-
-.repo--type a,
-.repo--type h3 {
-  color: var(--color-type-base);
+  --repo-bg: var(--color-type-bg-transparent);
+  --repo-color: var(--color-type-base);
+  --repo-shadow: var(--color-type-shadow);
 }
 
 .repo--eye {
-  background: var(--color-eye-bg-transparent);
-
-  .icon {
-    fill: var(--color-eye-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-eye-shadow);
-  }
-}
-
-.repo--eye a,
-.repo--eye h3 {
-  color: var(--color-eye-base);
+  --repo-bg: var(--color-eye-bg-transparent);
+  --repo-color: var(--color-eye-base);
+  --repo-shadow: var(--color-eye-shadow);
 }
 
 .repo--text {
-  background: var(--color-text-bg-transparent);
-
-  .icon {
-    fill: var(--color-text-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-text-shadow);
-  }
-}
-
-.repo--text a,
-.repo--text h3 {
-  color: var(--color-text-base);
+  --repo-bg: var(--color-text-bg-transparent);
+  --repo-color: var(--color-text-base);
+  --repo-shadow: var(--color-text-shadow);
 }
 
 .repo--refresh {
-  background: var(--color-refresh-bg-transparent);
-
-  .icon {
-    fill: var(--color-refresh-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-refresh-shadow);
-  }
-}
-
-.repo--refresh a,
-.repo--refresh h3 {
-  color: var(--color-refresh-base);
+  --repo-bg: var(--color-refresh-bg-transparent);
+  --repo-color: var(--color-refresh-base);
+  --repo-shadow: var(--color-refresh-shadow);
 }
 
 .repo--image {
-  background: var(--color-image-bg-transparent);
-
-  .icon {
-    fill: var(--color-image-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-image-shadow);
-  }
-}
-
-.repo--image a,
-.repo--image h3 {
-  color: var(--color-image-base);
+  --repo-bg: var(--color-image-bg-transparent);
+  --repo-color: var(--color-image-base);
+  --repo-shadow: var(--color-image-shadow);
 }
 
 .repo--palette {
-  background: var(--color-palette-bg-transparent);
-
-  .icon {
-    fill: var(--color-palette-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-palette-shadow);
-  }
-}
-
-.repo--palette a,
-.repo--palette h3 {
-  color: var(--color-palette-base);
+  --repo-bg: var(--color-palette-bg-transparent);
+  --repo-color: var(--color-palette-base);
+  --repo-shadow: var(--color-palette-shadow);
 }
 
 .repo--check {
-  background: var(--color-check-bg-transparent);
-
-  .icon {
-    fill: var(--color-check-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-check-shadow);
-  }
-}
-
-.repo--check a,
-.repo--check h3 {
-  color: var(--color-check-base);
+  --repo-bg: var(--color-check-bg-transparent);
+  --repo-color: var(--color-check-base);
+  --repo-shadow: var(--color-check-shadow);
 }
 
 .repo--game {
-  background: var(--color-game-bg-transparent);
-
-  .icon {
-    fill: var(--color-game-base);
-    background: transparent;
-  }
-
-  &:hover {
-    box-shadow: inset 0px 0px 0px 2px var(--color-game-shadow);
-  }
+  --repo-bg: var(--color-game-bg-transparent);
+  --repo-color: var(--color-game-base);
+  --repo-shadow: var(--color-game-shadow);
 }
 
-.repo--game a,
-.repo--game h3 {
-  color: var(--color-game-base);
+/* Styles pour les détails */
+.details {
+  position: absolute;
+  font-size: var(--text-s);
+  top: var(--spacing-15);
+  right: var(--spacing-20);
+  opacity: 0.75;
+
+  span {
+    margin-left: var(--spacing-16);
+  }
 }
 
 .copy {
