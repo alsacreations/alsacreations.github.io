@@ -73,6 +73,10 @@
   --color-check-bg-transparent: rgba(26, 188, 156, 0.2);
   --color-check-shadow: var(--color-check-base);
 
+  --color-game-base: #f39c12; /* Orange vif pour jeu */
+  --color-game-bg-transparent: rgba(243, 156, 18, 0.1);
+  --color-game-shadow: #f39c12;
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -543,6 +547,24 @@ h1 .icon {
 .repo--check a,
 .repo--check h3 {
   color: var(--color-check-base);
+}
+
+.repo--game {
+  background: var(--color-game-bg-transparent);
+
+  .icon {
+    fill: var(--color-game-base);
+    background: transparent;
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color-game-shadow);
+  }
+}
+
+.repo--game a,
+.repo--game h3 {
+  color: var(--color-game-base);
 }
 
 .copy {
