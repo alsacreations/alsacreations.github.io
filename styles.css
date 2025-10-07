@@ -77,6 +77,10 @@
   --color-game-bg-transparent: rgba(243, 156, 18, 0.2);
   --color-game-shadow: var(--color-game-base);
 
+  --color-scanner-base: #2ecc71; /* Vert pour scanner/QR codes */
+  --color-scanner-bg-transparent: rgba(46, 204, 113, 0.2);
+  --color-scanner-shadow: var(--color-scanner-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -363,6 +367,12 @@ h1 .icon {
   --repo-bg: var(--color-game-bg-transparent);
   --repo-color: var(--color-game-base);
   --repo-shadow: var(--color-game-shadow);
+}
+
+.repo--scanner {
+  --repo-bg: var(--color-scanner-bg-transparent);
+  --repo-color: var(--color-scanner-base);
+  --repo-shadow: var(--color-scanner-shadow);
 }
 
 /* Styles pour les détails */
