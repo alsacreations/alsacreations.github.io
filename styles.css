@@ -81,6 +81,11 @@
   --color-scanner-bg-transparent: rgba(46, 204, 113, 0.2);
   --color-scanner-shadow: var(--color-scanner-base);
 
+  /* Hotpink (rose) */
+  --color-brush-base: #ff69b4; /* HOTPINK */
+  --color-brush-bg-transparent: rgba(255, 105, 180, 0.2);
+  --color-brush-shadow: var(--color-brush-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -373,6 +378,12 @@ h1 .icon {
   --repo-bg: var(--color-scanner-bg-transparent);
   --repo-color: var(--color-scanner-base);
   --repo-shadow: var(--color-scanner-shadow);
+}
+
+.repo--brush {
+  --repo-bg: var(--color-brush-bg-transparent);
+  --repo-color: var(--color-brush-base);
+  --repo-shadow: var(--color-brush-shadow);
 }
 
 /* Styles pour les détails */
