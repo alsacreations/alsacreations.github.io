@@ -86,6 +86,11 @@
   --color-brush-bg-transparent: rgba(255, 105, 180, 0.2);
   --color-brush-shadow: var(--color-brush-base);
 
+  /* animeCSS */
+  --color-anime-base: #a29bfe;
+  --color-anime-bg-transparent: rgba(162, 155, 254, 0.2);
+  --color-anime-shadow: var(--color-anime-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -208,7 +213,8 @@ a {
   padding: var(--spacing-3) var(--spacing-10) var(--spacing-4); /* 3px 10px 4px */
   border-radius: var(--radius-s); /* 3px */
   margin: var(--spacing-6) var(--spacing-12) var(--spacing-0) var(--spacing-0); /* 6px 12px 0 0 */
-  transition: var(--transition-duration-fast) background-color,
+  transition:
+    var(--transition-duration-fast) background-color,
     var(--transition-duration-fast) color;
 }
 
@@ -384,6 +390,12 @@ h1 .icon {
   --repo-bg: var(--color-brush-bg-transparent);
   --repo-color: var(--color-brush-base);
   --repo-shadow: var(--color-brush-shadow);
+}
+
+.repo--anime {
+  --repo-bg: var(--color-anime-bg-transparent);
+  --repo-color: var(--color-anime-base);
+  --repo-shadow: var(--color-anime-shadow);
 }
 
 /* Styles pour les détails */
