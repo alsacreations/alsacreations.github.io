@@ -101,6 +101,11 @@
   --color-primary-bg-transparent: rgba(145, 145, 255, 0.1);
   --color-primary-shadow: var(--color-primary-base);
 
+  /* SchnapsGPT */
+  --color-robot-base: #a9d4ff;
+  --color-robot-bg-transparent: rgba(169, 212, 255, 0.2);
+  --color-robot-shadow: var(--color-robot-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -418,6 +423,12 @@ h1 .icon {
   --repo-bg: var(--color-primary-bg-transparent);
   --repo-color: var(--color-primary-base);
   --repo-shadow: var(--color-primary-shadow);
+}
+
+.repo--robot {
+  --repo-bg: var(--color-robot-bg-transparent);
+  --repo-color: var(--color-robot-base);
+  --repo-shadow: var(--color-robot-shadow);
 }
 
 /* Styles pour les détails */
