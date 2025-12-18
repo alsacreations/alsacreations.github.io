@@ -91,6 +91,11 @@
   --color-anime-bg-transparent: rgba(162, 155, 254, 0.2);
   --color-anime-shadow: var(--color-anime-base);
 
+  /* Masque */
+  --color-masque-base: #ffb142;
+  --color-masque-bg-transparent: rgba(255, 177, 66, 0.2);
+  --color-masque-shadow: var(--color-masque-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -396,6 +401,12 @@ h1 .icon {
   --repo-bg: var(--color-anime-bg-transparent);
   --repo-color: var(--color-anime-base);
   --repo-shadow: var(--color-anime-shadow);
+}
+
+.repo--masque {
+  --repo-bg: var(--color-masque-bg-transparent);
+  --repo-color: var(--color-masque-base);
+  --repo-shadow: var(--color-masque-shadow);
 }
 
 /* Styles pour les détails */
