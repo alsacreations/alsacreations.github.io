@@ -96,6 +96,11 @@
   --color-masque-bg-transparent: rgba(255, 177, 66, 0.2);
   --color-masque-shadow: var(--color-masque-base);
 
+  /* Primary */
+  --color-primary-base: #9191ff;
+  --color-primary-bg-transparent: rgba(145, 145, 255, 0.1);
+  --color-primary-shadow: var(--color-primary-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -407,6 +412,12 @@ h1 .icon {
   --repo-bg: var(--color-masque-bg-transparent);
   --repo-color: var(--color-masque-base);
   --repo-shadow: var(--color-masque-shadow);
+}
+
+.repo--primary {
+  --repo-bg: var(--color-primary-bg-transparent);
+  --repo-color: var(--color-primary-base);
+  --repo-shadow: var(--color-primary-shadow);
 }
 
 /* Styles pour les détails */
