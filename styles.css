@@ -111,6 +111,11 @@
   --color-elastic-bg-transparent: rgba(255, 159, 67, 0.2);
   --color-elastic-shadow: var(--color-elastic-base);
 
+  /* Fondue */
+  --color-fondue-base: #f1c40f;
+  --color-fondue-bg-transparent: rgba(241, 196, 15, 0.2);
+  --color-fondue-shadow: var(--color-fondue-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -440,6 +445,12 @@ h1 .icon {
   --repo-bg: var(--color-elastic-bg-transparent);
   --repo-color: var(--color-elastic-base);
   --repo-shadow: var(--color-elastic-shadow);
+}
+
+.repo--fondue {
+  --repo-bg: var(--color-fondue-bg-transparent);
+  --repo-color: var(--color-fondue-base);
+  --repo-shadow: var(--color-fondue-shadow);
 }
 
 /* Styles pour les détails */
