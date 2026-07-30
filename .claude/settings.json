@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pass.alsacreations.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://github.com/alsacreations/pass)"
+    ]
+  }
+}

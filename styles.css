@@ -116,6 +116,11 @@
   --color-fondue-bg-transparent: rgba(241, 196, 15, 0.2);
   --color-fondue-shadow: var(--color-fondue-base);
 
+  /* Pass */
+  --color-pass-base: #5352ed;
+  --color-pass-bg-transparent: rgba(83, 82, 237, 0.2);
+  --color-pass-shadow: var(--color-pass-base);
+
   /* Espacements */
   --spacing-0: 0rem;
   --spacing-3: 0.1875rem; /* 3px / 16px */
@@ -451,6 +456,12 @@ h1 .icon {
   --repo-bg: var(--color-fondue-bg-transparent);
   --repo-color: var(--color-fondue-base);
   --repo-shadow: var(--color-fondue-shadow);
+}
+
+.repo--pass {
+  --repo-bg: var(--color-pass-bg-transparent);
+  --repo-color: var(--color-pass-base);
+  --repo-shadow: var(--color-pass-shadow);
 }
 
 /* Styles pour les détails */
