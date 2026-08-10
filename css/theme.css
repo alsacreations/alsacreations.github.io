@@ -1,0 +1,153 @@
+/* ==============================
+   Fonts
+   ============================== */
+
+@layer theme {
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/latin-400-normal.woff2") format("woff2");
+    unicode-range:
+      U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+      U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+      U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/latin-500-normal.woff2") format("woff2");
+    unicode-range:
+      U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+      U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+      U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/latin-600-normal.woff2") format("woff2");
+    unicode-range:
+      U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+      U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+      U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/latin-700-normal.woff2") format("woff2");
+    unicode-range:
+      U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+      U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+      U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* ==============================
+     Variables
+     ============================== */
+
+  :root {
+    /* Couleurs catégories */
+    --color-ref: #d60633;
+    --color-code: #2563eb;
+    --color-performance: #ffd700;
+    --color-design: #9fc902;
+    --color-jeux: #d97706;
+    --color-divers: #c2c3bf;
+
+    /* Teintes catégories (fond des pills) */
+    --tint-ref: #fedbe5;
+    --tint-code: #dbeafe;
+    --tint-performance: #ffe168;
+    --tint-design: #def2d4;
+    --tint-jeux: #fef3c7;
+    --tint-divers: #dfdfdf;
+
+    /* Couleurs UI */
+    /* --color-bg-page: #e7e5df; */
+    --color-bg-page: #f6f7f9;
+    --color-bg-container: #f6f7f9;
+    --color-bg-hover: #f5f5f7;
+    --color-bg-image-placeholder: #eef0f3;
+    --color-text-primary: #14161b;
+    --color-text-secondary: #5b616e;
+    --color-text-muted: #56575a;
+    --color-text-tag: #4c5260;
+    --color-text-btn: #3a3e48;
+    --color-text-inverse: #ffffff;
+    --color-text-on-accent: #0f1116;
+    --color-border: #ecedf2;
+    --color-border-light: #e7e9ef;
+    --color-border-btn: #e4e6ec;
+    --color-card-bg: #ffffff;
+    --color-ink: #15171c;
+    --color-dark-border: #3a3e48;
+    --color-dark-text: #a8aeba;
+    --color-status-online: #22c55e;
+    --color-accent: #abc738;
+
+    /* Espacements */
+    --spacing-xs: 0.25rem;
+    --spacing-s: 0.5rem;
+    --spacing-m: 1rem;
+    --spacing-l: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Rayons */
+    --radius-card: 16px;
+    --radius-badge: 12px;
+    --radius-button: 8px;
+    --radius-pill: 999px;
+    --radius-image: 10px;
+    --radius-panel: 3px;
+    --radius-dot: 3px;
+    --radius-bar: 2px;
+
+    /* Typographie */
+    --font-family: "Poppins", sans-serif;
+    --font-size-xs: 0.8125rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.1875rem;
+    --font-size-2xl: 2.75rem;
+    --font-size-copyright: 0.7813rem;
+    --font-size-tag: 0.75rem;
+    --font-size-compact: 0.8438rem;
+
+    /* Ombres */
+    --shadow-sm: 0 1px 2px rgb(16 24 40 / 4%);
+    --shadow-md: 0 1px 2px rgb(16 24 40 / 7%);
+    --shadow-panel: 0 1px 3px rgb(0 0 0 / 10%);
+    --shadow-hover: 0 10px 24px rgb(16 24 40 / 8%);
+  }
+
+  /* ==============================
+     Base
+     ============================== */
+
+  body {
+    background-color: var(--color-bg-page);
+    color: var(--color-text-primary);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgb(from var(--color-code) r g b / 13%);
+  }
+
+  a {
+    color: inherit;
+  }
+}

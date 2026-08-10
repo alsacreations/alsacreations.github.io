@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projets open-source — Alsacréations</title>
+    <meta
+      name="description"
+      content="Outils, librairies et expériences pour intégrateurs et intégratrices, publiés librement sur GitHub par Alsacréations." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/layouts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <div class="container" data-layout="boxed">
+        <div class="panel">
+          <div class="panel__body">
+            <!-- Header -->
+            <header class="header" data-layout="repel" data-align="end">
+              <div class="header__content">
+                <h1 class="header__title">
+                  Projets open&#8209;source et outils d'Alsacréations
+                </h1>
+                <p class="header__subtitle">
+                  Outils, librairies et expériences pour intégrateurs et
+                  intégratrices, publiés librement sur GitHub ou utilisables
+                  gratuitement en ligne.
+                </p>
+              </div>
+              <div class="header__aside" data-layout="stack">
+                <img
+                  class="header__logo"
+                  src="img/logo-alsacreations.svg"
+                  alt="Alsacréations"
+                  width="219"
+                  height="41" />
+                <a
+                  href="https://github.com/alsacreations"
+                  class="btn-github"
+                  target="_blank"
+                  rel="noopener">
+                  <span
+                    class="btn-github__status-dot"
+                    aria-hidden="true"></span>
+                  <img
+                    class="btn-github__icon"
+                    src="img/github-invertocat.svg"
+                    alt=""
+                    width="53"
+                    height="52" />
+                  github.com/alsacreations
+                </a>
+              </div>
+            </header>
+
+            <!-- Légende / Filtre catégories -->
+            <div
+              class="legend"
+              data-layout="cluster"
+              data-gap="s"
+              role="group"
+              aria-label="Filtrer les projets par catégorie">
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="all"
+                aria-pressed="true">
+                Tous
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="ref"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--ref"
+                  aria-hidden="true"></span
+                >Référence
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="code"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--code"
+                  aria-hidden="true"></span
+                >Code
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="performance"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--performance"
+                  aria-hidden="true"></span
+                >Performance
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="design"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--design"
+                  aria-hidden="true"></span
+                >Design
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="jeux"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--jeux"
+                  aria-hidden="true"></span
+                >Jeux
+              </button>
+              <button
+                type="button"
+                class="legend__item"
+                data-filter="divers"
+                aria-pressed="false">
+                <span
+                  class="legend__dot legend__dot--divers"
+                  aria-hidden="true"></span
+                >Divers
+              </button>
+            </div>
+
+            <!-- Statut du filtre, annoncé aux technologies d'assistance -->
+            <p id="filter-status" class="visually-hidden" role="status"></p>
+
+            <!-- Grille de projets -->
+            <section class="projects" aria-label="Liste des projets">
+              <ul class="projects__grid" data-layout="autogrid" role="list">
+                <!-- Kiwipedia -->
+                <li class="card card--ref" data-category="ref">
+                  <div class="card__header">
+                    <h2 class="card__title">Kiwipedia</h2>
+                    <span class="card__tag">#référence</span>
+                  </div>
+                  <p class="card__desc">
+                    Nos guidelines, checklist et bonnes pratiques d'intégration
+                    web
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/kiwipedia.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="http://kiwipedia.fr/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/kiwipedia"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Bretzel -->
+                <li class="card card--code" data-category="code">
+                  <div class="card__header">
+                    <h2 class="card__title">Bretzel</h2>
+                    <span class="card__tag">#base</span>
+                  </div>
+                  <p class="card__desc">
+                    Layouts CSS réutilisables et utilitaires
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/bretzel.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://bretzel.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/bretzel"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- KNACSS -->
+                <li class="card card--code" data-category="code">
+                  <div class="card__header">
+                    <h2 class="card__title">KNACSS</h2>
+                    <span class="card__tag">#base</span>
+                  </div>
+                  <p class="card__desc">
+                    Styles modernes et accessibles pour les éléments HTML natifs
+                    courants
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/knacss.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://knacss.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/KNACSS"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Fondue -->
+                <li class="card card--performance" data-category="performance">
+                  <div class="card__header">
+                    <h2 class="card__title">Fondue</h2>
+                    <span class="card__tag">#performance</span>
+                  </div>
+                  <p class="card__desc">Optimisation de polices pour le web</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/fondue.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://fondue.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/fondue"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- UniClaude -->
+                <li class="card card--ref" data-category="ref">
+                  <div class="card__header">
+                    <h2 class="card__title">UniClaude</h2>
+                    <span class="card__tag">#référence</span>
+                  </div>
+                  <p class="card__desc">Explorateur de caractères Unicode</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/uniclaude.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://uniclaude.alsacreations.com/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/uniclaude"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Schnaps.it -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Schnaps.it</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">
+                    Générateur de Lorem Ipsum alsacien, gal!
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/schnapsit.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://schnapsit.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/schnapsit"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Quetsche -->
+                <li class="card card--performance" data-category="performance">
+                  <div class="card__header">
+                    <h2 class="card__title">Quetsche</h2>
+                    <span class="card__tag">#performance</span>
+                  </div>
+                  <p class="card__desc">
+                    Compression d'images. Simple. Basique
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/quetsche.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://quetsche.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/quetsche"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Elastic -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Elastic</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">
+                    Générateur de tailles de police et espacements fluides
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/elastic.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://elastic.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/elastic"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Kiwilog -->
+                <li class="card card--performance" data-category="performance">
+                  <div class="card__header">
+                    <h2 class="card__title">Kiwilog</h2>
+                    <span class="card__tag">#outil</span>
+                  </div>
+                  <p class="card__desc">
+                    Suivi et consultation de logs applicatifs
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/kiwilog.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://log.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                  </div>
+                </li>
+
+                <!-- animeCSS -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">animeCSS</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">
+                    Utilitaires d'animations CSS au scroll
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/animecss.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://animecss.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/animecss"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Hotpink -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Hotpink</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">Référence des couleurs CSS nommées</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/hotpink.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://hotpink.alsacreations.com/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/hotpink"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Primary -->
+                <li class="card card--code" data-category="code">
+                  <div class="card__header">
+                    <h2 class="card__title">Primary</h2>
+                    <span class="card__tag">#base</span>
+                  </div>
+                  <p class="card__desc">Pour starter ses projets avec style</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/primary.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://primary.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/primary"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Reset -->
+                <li class="card card--code" data-category="code">
+                  <div class="card__header">
+                    <h2 class="card__title">Reset</h2>
+                    <span class="card__tag">#base</span>
+                  </div>
+                  <p class="card__desc">Reset CSS moderne et accessible</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/reset.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://reset.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/reset"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Masque -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Masque</h2>
+                    <span class="card__tag">#svg</span>
+                  </div>
+                  <p class="card__desc">
+                    Générateur de masques CSS pour icônes SVG
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/masque.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://masque.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/masque"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- MyDevice -->
+                <li class="card card--ref" data-category="ref">
+                  <div class="card__header">
+                    <h2 class="card__title">MyDevice</h2>
+                    <span class="card__tag">#référence</span>
+                  </div>
+                  <p class="card__desc">
+                    Taille, résolution et infos de votre device
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/mydevice.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://mydevice.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/mydevice"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- HTML6 -->
+                <li class="card card--ref" data-category="ref">
+                  <div class="card__header">
+                    <h2 class="card__title">html6.fr</h2>
+                    <span class="card__tag">#référence</span>
+                  </div>
+                  <p class="card__desc">
+                    Expérimentation de référence sur le langage HTML, ses attributs et types MIME
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/html6.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://www.html6.fr"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Spätzi -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Spätzi</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">
+                    Testez et corrigez vos contrastes de couleurs non
+                    accessibles
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/spatzi.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://spatzi.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/spatzi"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Cuillère -->
+                <li class="card card--divers" data-category="divers">
+                  <div class="card__header">
+                    <h2 class="card__title">Cuillère</h2>
+                    <span class="card__tag">#divers</span>
+                  </div>
+                  <p class="card__desc">Générateur de QR codes personnalisés</p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/cuillere.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://cuillere.alsacreations.com/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/cuillere"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Liquid -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Liquid</h2>
+                    <span class="card__tag">#design</span>
+                  </div>
+                  <p class="card__desc">
+                    Un gabarit de page responsive en Grid Layout
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/liquid.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://liquid.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/liquid"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Pass -->
+                <li class="card card--divers" data-category="divers">
+                  <div class="card__header">
+                    <h2 class="card__title">Pass</h2>
+                    <span class="card__tag">#divers</span>
+                  </div>
+                  <p class="card__desc">
+                    Un gabarit de page responsive en Grid Layout
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/pass.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://pass.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/pass"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Quiz -->
+                <li class="card card--jeux" data-category="jeux">
+                  <div class="card__header">
+                    <h2 class="card__title">Quiz</h2>
+                    <span class="card__tag">#fun</span>
+                  </div>
+                  <p class="card__desc">
+                    Modèle de quiz interactif avec calcul du score
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/quiz.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://github.com/alsacreations/quiz"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- IEscape -->
+                <li class="card card--jeux" data-category="jeux">
+                  <div class="card__header">
+                    <h2 class="card__title">IEscape</h2>
+                    <span class="card__tag">#jeu</span>
+                  </div>
+                  <p class="card__desc">
+                    Aidez l'Alsacréature à échapper à Internet Explorer
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/iescape.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://iescape.alsacreations.com/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >jouer</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/iescape"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- SchnapsGPT -->
+                <li class="card card--jeux" data-category="jeux">
+                  <div class="card__header">
+                    <h2 class="card__title">SchnapsGPT</h2>
+                    <span class="card__tag">#poisson</span>
+                  </div>
+                  <p class="card__desc">
+                    Agent conversationnel de nouvelle génération
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/schnapsgpt.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://schnapsgpt.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >utiliser</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/schnapsgpt"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Kougelpong -->
+                <li class="card card--jeux" data-category="jeux">
+                  <div class="card__header">
+                    <h2 class="card__title">Kougelpong</h2>
+                    <span class="card__tag">#jeu</span>
+                  </div>
+                  <p class="card__desc">
+                    Jeu de space-invaders-pong dans l'espace
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/kougelpong.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://kougelpong.alsacreations.com/"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >jouer</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/kougelpong"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Palette -->
+                <li class="card card--design" data-category="design">
+                  <div class="card__header">
+                    <h2 class="card__title">Palette</h2>
+                    <span class="card__tag">#archive</span>
+                  </div>
+                  <p class="card__desc">
+                    Générateur de palettes de couleurs accessibles
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/palette.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://palette.alsacreations.com"
+                      class="btn btn--primary"
+                      target="_blank"
+                      rel="noopener"
+                      >site web</a
+                    >
+                    <a
+                      href="https://github.com/alsacreations/palette"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- Pepin -->
+                <li class="card card--code" data-category="code">
+                  <div class="card__header">
+                    <h2 class="card__title">Pepin</h2>
+                    <span class="card__tag">#archive</span>
+                  </div>
+                  <p class="card__desc">
+                    Structure par défaut de plugin jQuery
+                  </p>
+                  <div class="card__image card__image--placeholder">
+                    <img src="img/pepin.webp" alt="" loading="lazy" />
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://github.com/alsacreations/pepin"
+                      class="btn btn--secondary"
+                      target="_blank"
+                      rel="noopener"
+                      >repo GitHub</a
+                    >
+                  </div>
+                </li>
+
+                <!-- En préparation -->
+                <li class="card card--dark">
+                  <div class="card__header">
+                    <h2 class="card__title">En préparation</h2>
+                    <span class="card__badge">
+                      <span class="card__badge-dot" aria-hidden="true"></span
+                      >bientôt
+                    </span>
+                  </div>
+                  <p class="card__desc">
+                    De nouveaux outils open&#8209;source sont en cours
+                    d'élaboration dans nos ateliers.
+                  </p>
+                  <div class="card__cta-box">
+                    <p class="card__cta-title">Un projet web professionnel ?</p>
+                    <p class="card__cta-text">
+                      Parlons-en — l'agence Alsacréations vous accompagne.
+                    </p>
+                  </div>
+                  <div class="card__actions">
+                    <a
+                      href="https://www.alsacreations.fr/contact"
+                      class="card__btn"
+                      target="_blank"
+                      rel="noopener"
+                      >Nous contacter →</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="footer__content">
+              <p class="footer__brand">Alsacréations</p>
+              <p class="footer__desc">
+                Agence de création web et formations, depuis l'Alsace.<br />Le
+                code ouvert et les expérimentations, c'est dans notre
+                <abbr title="Alsace Digital Network">ADN</abbr>.
+              </p>
+              <nav class="footer__links" aria-label="Liens Alsacréations">
+                <a
+                  href="https://www.alsacreations.com"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener"
+                  >Site web</a
+                >
+                <a
+                  href="https://github.com/alsacreations"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                <a
+                  href="https://forum.alsacreations.com"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener"
+                  >Forum</a
+                >
+                <a
+                  href="https://www.alsacreations.fr/contact"
+                  class="footer__link"
+                  target="_blank"
+                  rel="noopener"
+                  >Contact</a
+                >
+              </nav>
+              <p class="footer__copy">
+                © 2026 Alsacréations — Projets open source
+              </p>
+            </div>
+            <div class="footer__bars" aria-hidden="true">
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+              <div class="footer__bar-col">
+                <span class="footer__bar-cell"></span
+                ><span class="footer__bar-cell"></span>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <script src="js/filter.js" defer></script>
+  </body>
+</html>
