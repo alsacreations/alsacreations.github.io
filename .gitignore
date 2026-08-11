@@ -76,3 +76,9 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Claude
+.claude/
+
+# Codegraph
+.codegraph/
