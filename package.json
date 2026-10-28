@@ -12,11 +12,11 @@
     "lint": "npm run format:check && npm run lint:css"
   },
   "devDependencies": {
-    "prettier": "^3.9.6",
-    "stylelint": "^17.14.1",
+    "prettier": "^3.9.10",
+    "stylelint": "^17.16.0",
     "stylelint-config-html": "^2.0.0",
     "stylelint-config-property-sort-order-smacss": "^11.2.0",
     "stylelint-config-standard": "^40.0.0",
-    "stylelint-order": "^8.1.1"
+    "stylelint-order": "^8.1.2"
   }
 }
