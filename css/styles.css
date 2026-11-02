@@ -13,6 +13,7 @@
 
   .panel {
     overflow: hidden;
+
     /* border-radius: var(--radius-panel);
     background: var(--color-bg-container);
     box-shadow: var(--shadow-panel); */
@@ -307,7 +308,7 @@
   .card--divers {
     --card-color: var(--color-divers);
     --card-tint: var(--tint-divers);
-    --text-color: #444;
+    --text-color: #444444;
   }
 
   /* Card header */
