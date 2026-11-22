@@ -1,5 +1,33 @@
 @layer components {
   /* ==============================
+     Lien d'évitement
+     ============================== */
+
+  .skip-link {
+    position: absolute;
+    z-index: 100;
+    padding: 0.75em 1.25em;
+    transform: translateY(-200%);
+    border-radius: var(--radius-button);
+    background-color: var(--color-text-primary);
+    color: var(--color-text-inverse);
+    font-weight: 600;
+    text-decoration: none;
+    inset-block-start: var(--spacing-sm, 8px);
+    inset-inline-start: var(--spacing-sm, 8px);
+  }
+
+  .skip-link:focus {
+    transform: none;
+    outline: 3px solid var(--color-code);
+    outline-offset: 2px;
+  }
+
+  .page:focus {
+    outline: none;
+  }
+
+  /* ==============================
      Page layout
      ============================== */
 
